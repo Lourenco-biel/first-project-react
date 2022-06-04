@@ -7,14 +7,14 @@ import axios from 'axios'
 import Avatar from '../../Assets/avatar.svg'
 import Arrow from '../../Assets/arrow.svg'
 import Trash from '../../Assets/trash.png'
+import H1 from '../../components/Title'
+import ContainerItens from '../../components/ContainerItens';
+import Button from '../../components/Button';
 
 import { 
   Container, 
-  H1, 
   Image, 
-  ContainerItens,  
-  User, 
-  Button 
+  User,  
 } from './style';
 
 const Users = () => {
@@ -59,7 +59,7 @@ const Users = () => {
           ))}
         </ul>
 
-        <Button onClick={goBackPage} ><img alt='seta' src={Arrow} /> Voltar </Button>
+        <Button isBack={true} onClick={goBackPage} ><img alt='seta' src={Arrow} /> Voltar </Button>
 
       </ContainerItens>
     </Container>

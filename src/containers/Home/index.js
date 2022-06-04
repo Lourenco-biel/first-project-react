@@ -6,14 +6,14 @@ import axios from 'axios'
 import People from '../../Assets/people.svg'
 import Arrow from '../../Assets/arrow.svg'
 import H1 from '../../components/Title'
+import ContainerItens from '../../components/ContainerItens';
+import Button from '../../components/Button';
 
 import { 
   Container, 
   Image, 
-  ContainerItens, 
   InputLabel,  
-  Input, 
-  Button 
+  Input 
 } from './style';
 
 const App = () => {
